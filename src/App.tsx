@@ -27,6 +27,7 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
+      
       <img 
         src={myPicture} 
         alt="My Picture" 
@@ -35,8 +36,10 @@ function App() {
           maxWidth: '390px', // iPhone 12 Pro Max width
           height: 'auto',
           maxHeight: '844px', // iPhone 12 Pro Max height
-          objectFit: 'contain'
+          objectFit: 'contain',
+          cursor: 'pointer' // Add cursor style to indicate clickability
         }}
+        onClick={() => setCount((count) => count + 1)} // Add click handler to increment count
       />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
